@@ -1,6 +1,7 @@
 package github.code;
 
-public class TestCode {
+
+    public class TestCode {
         public static void main(String[] args) {
     
      //Test 1: Username validation

@@ -1,5 +1,9 @@
 package github.code;
 
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
+
 public class Login {
         String firstName;
         String lastName;
@@ -37,8 +41,10 @@ public class Login {
     }
     //Phone number must start with +27 and be least 12 characters long 
         public boolean checkCellPhoneNumber() {
-        String regex = "\\+27\\d{9'10}$"; //+27 followed by 9-10 digits
-        return phoneNumber.startsWith("+27") && phoneNumber.length() >= 12;
+        String regex = "\\+27\\d{9,10}$"; //+27 followed by 9-10 digits
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(phoneNumber);
+        return matcher.matches();
         
     }
     
