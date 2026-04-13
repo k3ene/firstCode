@@ -36,14 +36,15 @@ public class Login {
         return hasUpper && hasDigit && hasSpecial;
     }
     //Phone number must start with +27 and be least 12 characters long 
-        public boolean checkCellPhone() {
+        public boolean checkCellPhoneNumber() {
+        String regex = "\\+27\\d{9'10}$"; //+27 followed by 9-10 digits
         return phoneNumber.startsWith("+27") && phoneNumber.length() >= 12;
         
     }
     
     //Register user 
       public String registerUser() {
-          if (checkUserName() && checkPasswordComplexity() && checkCellPhone()) {
+          if (checkUserName() && checkPasswordComplexity() && checkCellPhoneNumber()) {
         return "Registration successful for user:" + username;
         } else {
         return "Registration failed. Please check your details" ;      

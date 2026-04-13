@@ -1,6 +1,7 @@
 package github.code;
 
 import java.util.Scanner;
+import.java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
@@ -53,7 +54,7 @@ public class Main {
         phoneNumber = input.nextLine();
         
         Login tempUser = new Login(firstName, lastName, username, password, phoneNumber);
-            if (tempUser.checkCellPhone()){
+            if (tempUser.checkCellPhoneNumber()){
                 break;
                 
          } else {
