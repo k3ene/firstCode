@@ -58,7 +58,7 @@ public class Main {
                 
          } else {
         System.out.println("Cellphone number incorrectly formatted. Try again.");
-           
+   
           }
           }
     //Create final user object
@@ -78,6 +78,7 @@ public class Main {
         String enteredPassword = input.nextLine();
         
     //Display the login results
+    
         System.out.println(user.returnLoginStatus(enteredUsername, enteredPassword));
         
             }
