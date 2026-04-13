@@ -25,4 +25,5 @@
 
 [9] "What’s the purpose of setters and getters in Java? A simple explanation for beginners," JavaSpring, Jan. 7, 2026. [Online]. Available: https://www.javaspring.net/blog/what-is-the-point-of-setters-and-getters-in-java/
  [Accessed: Mar. 29, 2026].
+
 */
