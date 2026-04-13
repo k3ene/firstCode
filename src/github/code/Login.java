@@ -29,7 +29,7 @@ public class Login {
         boolean hasUpper = false, hasDigit = false, hasSpecial = false;
             for (char c: password.toCharArray()) {
             if (Character.isUpperCase(c)) hasUpper = true;
-          else if (Character.isDigit(c)) hasDigit =true;
+          else if (Character.isDigit(c)) hasDigit = true;
           else if (!Character.isLetterOrDigit(c)) hasSpecial = true;
     
     }

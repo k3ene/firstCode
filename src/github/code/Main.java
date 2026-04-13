@@ -79,7 +79,7 @@ public class Main {
         
     //Display the login results
     
-        System.out.println(user.returnLoginStatus(enteredUsername, enteredPassword));
+         System.out.println(user.returnLoginStatus(enteredUsername, enteredPassword));
         
             }
         
